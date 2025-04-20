@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: stima-auto
+    env: python
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    plan: free
